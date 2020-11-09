@@ -11,6 +11,25 @@
 
             <!-- Blog Entries Column -->
             <div class="col-md-8">
+
+                <?php
+                    $query = "SELECT * FROM posts";
+                    $select_all_posts_query = mysqli_query($connection, $query);
+
+                        while($row = mysqli_fetch_assoc($select_all_posts_query)) {
+                            $post_title = $row['post_title'];
+                            $post_author = $row['post_author'];
+                            $post_date = $row['post_date'];
+                            $post_img = $row['post_img'];
+                            $post_content = $row['post_content'];
+                            $post_tags = $row['post_tags'];
+                            $post_comment_count = $row['post_comment_count'];
+                            $post_status = $row['post_status'];
+
+                            $post_title;
+
+                            ?>
+
                 <h1 class="page-header">
                     Page Heading
                     <small>Secondary Text</small>
@@ -30,6 +49,10 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
                 <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <hr>
+
+                <?php } ?>
+
+
             </div>
 
             <!-- Blog Sidebar Widgets Column -->
