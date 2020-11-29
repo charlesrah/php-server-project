@@ -31,7 +31,7 @@
                             ?>
 
                 <h1 class="page-header">
-                    Page Heading
+                    Testing new workflow
                     <small>Secondary Text</small>
                 </h1>
 
