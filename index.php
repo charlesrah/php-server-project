@@ -32,7 +32,7 @@
 
                 <h1 class="page-header">
                     Testing new workflow
-                    <small>Secondary Text</small>
+                    <small>Is this working</small>
                 </h1>
 
                 <!-- First Blog Post -->
